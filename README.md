@@ -19,7 +19,8 @@ Dependências:
 - Nodemon
 - Pug
 - MongoDB
-
+- Passaport
+- Express-session
 
 
 

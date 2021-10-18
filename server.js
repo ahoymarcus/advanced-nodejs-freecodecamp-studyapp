@@ -1,6 +1,9 @@
 'use strict';
 require('dotenv').config();
 const express = require('express');
+const session = require('express-session');
+const passport = require('passport');
+
 const myDB = require('./connection');
 const fccTesting = require('./freeCodeCamp/fcctesting.js');
 
@@ -17,6 +20,14 @@ app.use(express.urlencoded({ extended: true }));
 
 // SETTING the view engine for Express JS
 app.set('view engine', 'pug');
+
+// Configure Express-session
+app.use(session({
+	secret: process.env.SESSION_SECRET,
+	resave: true,
+	saveUninitialized: true,
+	cookie: { secure: false }
+}));
 
 
 app.route('/').get((req, res) => {
