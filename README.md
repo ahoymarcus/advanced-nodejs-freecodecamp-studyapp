@@ -1,8 +1,7 @@
-# Learn How JavaScript Assertions Work - Freecodecamp.org
+# Freecodecamp Advanced Node-JS Study App - Freecodecamp.org
 
 
-Estudo de testes com o Node JS utilizando suas asserções e também módulos de terceiros.
-Trata-se do primeiro estudo dentro da Certificação em <em>Quality Assurance</em> da Freecodecamp.org em desenvolvimento backend com Node e Express-JS avançado.[^1].
+Estudo de algumas funções avançadas de Node-JS como parte da Certificação em <em>Quality Assurance</em> da Freecodecamp.org em desenvolvimento backend com Node e Express-JS avançado.[^1].
 
 <br />
 
@@ -17,13 +16,10 @@ Dependências:
 
 - Dotenv
 - Express-JS
-- Body-parser
-- Cors
 - Nodemon
-- Chai
-- Chai-http
-- Mocha
-- Zombie
+- Pug
+- MongoDB
+
 
 
 
