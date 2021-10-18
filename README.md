@@ -35,8 +35,8 @@ Dependências:
 
 <br />
 
-### Progredindo com os testes: Basic Assertions, Equality, Comparisons, Array, Strings:          
-![Imagem com a resolução da primeira metade dos testes](/public/images/)
+### Resultado do estudo após a configuração inicial das duas duas dependências de sessão (Express-session e Passport) e da conexão com o MongoDB:          
+![Imagem com o resultado inicial do app  após a configuração inicial das duas duas dependências de sessão e conexão com MongoDB](/public/images/configurações-iniciais-de-sessão-e-conexão-com-MongoDB.png)
 
 
 

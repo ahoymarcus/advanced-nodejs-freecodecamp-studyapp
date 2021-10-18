@@ -29,15 +29,41 @@ app.use(session({
 	cookie: { secure: false }
 }));
 
+app.use(passport.initialize());
+app.use(passport.session());
 
-app.route('/').get((req, res) => {
-  res.render('pug/index', {
-		title: 'Hello',
-		message: 'Please login'
+const ObjectID = require('mongodb').ObjectID;
+
+
+
+myDB(async client => {
+	const myDataBase = await client.db('databse').collection('users');
+	
+	// Be sure to change the title
+	app.route('/').get((req, res) => {
+		res.render('pug', {
+			title: 'Connected to Database',
+			message: 'Please login'
+		});
+	});
+	
+	// Serialization and deserialization here...
+	passport.serializeUser((user, done) => {
+		done(null, user._id);
+	});
+	passport.deserializeUser((id, done) => {
+		myDataBase.findOne({ _id: new ObjectID(id)}, (err, doc) => {
+			done(null, doc);
+		});
+	});
+}).catch(e => {
+	app.route('/').get((req, res) => {
+		res.render('pug', {
+			title: e, 
+			message: 'Unable to login'
+		});
 	});
 });
-
-
 
 
 
@@ -47,10 +73,6 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log('Listening on port ' + PORT);
 });
-
-
-
-
 
 
 
