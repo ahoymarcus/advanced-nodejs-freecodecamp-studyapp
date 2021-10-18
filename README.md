@@ -25,8 +25,8 @@ Dependências:
 
 <br />
 
-### Estado Inicial do Projeto Automated Testing App com Node-JS:           
-![Imagem com o Estado Inicial do Projeto Automated Testing App com Node-JS](/public/images/estado-inicial-do-projeto-automated-testing-app-com-nodejs.png)
+### Home page do Advanced Node-JS Study App:           
+![Imagem da Home page do Advanced Node-JS Study App](/public/images/home-page-do-advanced-nodejs-studyapp.png)
 
 
 
@@ -35,14 +35,20 @@ Dependências:
 <br />
 
 ### Progredindo com os testes: Basic Assertions, Equality, Comparisons, Array, Strings:          
-![Imagem com a resolução da primeira metade dos testes](/public/images/testes-básico-string-array-projeto-testing-app-com-nodejs.png)
+![Imagem com a resolução da primeira metade dos testes](/public/images/)
+
+
+
+
 
 
 
 <br />
 
 ### Progredindo com os testes: testando objetos e requisições HTTP com o Chai              
-![Imagem com a resolução de testes com objetos e requisições http](/public/images/testes-objetos-e-integração-chai-http.png)
+![Imagem com a resolução de testes com objetos e requisições http](/public/images/
+
+
 
 
 
@@ -62,7 +68,7 @@ Dependências:
 <br />
 
 ### Resultado final do curso em Freecodecamp.org:               
-![Resultado final do curso em Freecodecamp.org](/public/images/quality-assurance-and-testing-with-Chai.png)
+![Resultado final do curso em Freecodecamp.org](/public/images/)
 
 
 
