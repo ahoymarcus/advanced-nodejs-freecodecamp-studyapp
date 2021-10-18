@@ -19,8 +19,10 @@ Dependências:
 - Nodemon
 - Pug
 - MongoDB
-- Passaport
 - Express-session
+- Passaport
+- Passaport-local
+
 
 
 
