@@ -22,7 +22,7 @@ Dependências:
 - Express-session
 - Passaport
 - Passaport-local
-
+- Bcrypt
 
 
 
