@@ -24,6 +24,7 @@ Dependências:
 - Passaport-local
 - Passport-github
 - Bcrypt
+- Socket.io
 
 
 
