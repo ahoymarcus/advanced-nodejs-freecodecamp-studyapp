@@ -36,8 +36,8 @@ module.exports = function(app, myDataBase) {
 		}
 	));
 	
-	const callbackURL_replit = "https://advanced-nodejs-study-app.ahoymarcus.repl.co";
-	const callbackURL_local = "http://localhost:3000/";
+	const callbackURL_replit = "https://advanced-nodejs-study-app.ahoymarcus.repl.co/callback";
+	const callbackURL_local = "http://localhost:3000//callback";
 	passport.use(new GitHubStrategy({
 		clientID: process.env.GITHUB_CLIENT_ID,
 		clientSecret: process.env.GITHUB_CLIENT_SECRET,
