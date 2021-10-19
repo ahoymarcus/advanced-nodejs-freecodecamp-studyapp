@@ -9,8 +9,7 @@ const bcrypt = require('bcrypt');
 
 const myDB = require('./connection');
 const fccTesting = require('./freeCodeCamp/fcctesting.js');
-const routes = require('./routes.js');
-const auth = require('./auth.js');
+
 
 
 const app = express();
@@ -38,11 +37,6 @@ app.use(passport.session());
 
 
 myDB(async client => {
-	
-	routes(app, myDataBase);
-	auth(app, myDataBase);
-	
-	
 	const myDataBase = await client.db('databse').collection('users');
 	
 	// Be sure to change the title
