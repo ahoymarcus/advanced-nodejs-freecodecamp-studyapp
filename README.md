@@ -25,6 +25,9 @@ Dependências:
 - Passport-github
 - Bcrypt
 - Socket.io
+- Passport.socketio
+- Connect-mongo
+- Cookie-parser
 
 
 

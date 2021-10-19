@@ -38,6 +38,7 @@ app.use(passport.session());
 
 
 myDB(async client => {
+	// Veja que 'database' é o nome para o banco de dados cuja collection será 'users'
 	const myDataBase = await client.db('databse').collection('users');
 	
 	routes(app, myDataBase);
@@ -46,10 +47,16 @@ myDB(async client => {
 	let currentUsers = 0;
 	io.on('connection', socket => {
 		++currentUsers;
-		
 		io.emit('user count', currentUsers);
-		
 		console.log('A user has connected');
+		
+		socket.on('disconnect', () => {
+			--currentUsers;
+			io.emit('user count', currentUsers);
+			
+			console.log('A user has disconnected');
+		});
+		
 	});
 	
 }).catch(e => {
