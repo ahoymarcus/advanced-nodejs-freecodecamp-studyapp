@@ -47,6 +47,14 @@ Dependências:
 
 
 
+<br />
+
+### Usando a template engine do Pug para criar renderizações condicionais dos formulário:               
+![Imagem mostrando as renderizações de tela condicionadas pela template engine do Pug](/public/images/definindo-rederização-condicional-de-views-com-pug.png)
+
+
+
+
 
 <br />
 
@@ -60,10 +68,7 @@ Dependências:
 
 
 
-<br />
 
-### Resultado final do curso em Freecodecamp.org:               
-![Resultado final do curso em Freecodecamp.org](/public/images/)
 
 
 
