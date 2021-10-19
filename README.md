@@ -44,21 +44,10 @@ Dependências:
 
 
 
-
-
 <br />
 
-### Progredindo com os testes: testando objetos e requisições HTTP com o Chai              
-![Imagem com a resolução de testes com objetos e requisições http](/public/images/
-
-
-
-
-
-<br />
-
-### Fazendo teste com Zombie: Headless Browsers.               
-![Imagem com a resolução de testes com Zombie](/public/images/testes-de-integração-headless-browser-com-Zombie.png)
+### Logando na aplicação com validação por senha:                   
+![Imagem de requisição para Logar na aplicação com validação por senha](/public/images/log-com-validação-para-usuário-na-aplicação.png)
 
 
 
