@@ -2,6 +2,8 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local');
 const bcrypt = require('bcrypt');
 const ObjectID = require('mongodb').ObjectID;
+const GitHubStrategy = require('passport-github');
+
 
 
 module.exports = function(app, myDataBase) {
@@ -31,6 +33,20 @@ module.exports = function(app, myDataBase) {
 				
 				return done(null, user);
 			});
+		}
+	));
+	
+	const callbackURL_replit = "https://advanced-nodejs-study-app.ahoymarcus.repl.co";
+	const callbackURL_local = "http://localhost:3000/";
+	passport.use(new GitHubStrategy({
+		clientID: process.env.GITHUB_CLIENT_ID,
+		clientSecret: process.env.GITHUB_CLIENT_SECRET,
+		callbackURL: callbackURL_local
+	},
+		function(accessToken, refreshToken, profile, cb) {
+			console.log(profile);
+			
+			//Database logic here with callback containing our user object
 		}
 	));
 	
